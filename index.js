@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const userRoutes = require('./routes/userRoutes');
 const app = express();
-const PORT = 5010;
+const PORT = 8000;
 app.use(bodyParser.json());
 app.use('/api', userRoutes);
 app.listen(PORT, () => {
